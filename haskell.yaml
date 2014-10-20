@@ -1,8 +1,8 @@
-- hosts: ansible-sample
+- hosts: localhost
   sudo: yes
   tasks:
-      - name: ghc/cabal-installのインストール
-        apt: name={{ item }}
-        with_items:
-            - ghc
-            - cabal-install
+    - name: ghc/cabal-installのインストール
+      apt: name={{ item }}
+      with_items:
+        - ghc
+        - cabal-install
