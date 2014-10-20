@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
 
   config.vm.provider :virtualbox do |v|
-    v.name = "ansible_name"
+    v.name = "ansible_sample"
     v.memory = 1024
   end
 
